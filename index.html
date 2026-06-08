@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rise Lawns | Acquiring Landscaping Businesses in Metro Atlanta</title>
+<meta name="description" content="Rise Lawns acquires established residential and commercial landscaping businesses across Metro Atlanta generating $500K–$3M in annual revenue. We're long-term owners, not flippers.">
+<meta property="og:title" content="Rise Lawns | Acquiring Landscaping Businesses in Metro Atlanta">
+<meta property="og:description" content="We buy and grow great landscaping businesses in Metro Atlanta. $500K–$3M in revenue. Long-term owners, not flippers.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#0f2e1d;
+    --green-deep:#0a2014;
+    --green-mid:#1c4a30;
+    --moss:#3f7a4f;
+    --cream:#f4efe2;
+    --cream-soft:#ece5d3;
+    --amber:#e0a039;
+    --amber-soft:#f0c46a;
+    --ink:#13261a;
+    --serif:"Fraunces",Georgia,serif;
+    --sans:"Hanken Grotesk",-apple-system,sans-serif;
+    --maxw:1180px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--amber);color:var(--green-deep)}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:22px 32px;
+    transition:background .4s ease,padding .4s ease,box-shadow .4s ease;
+  }
+  nav.scrolled{
+    background:rgba(15,46,29,.92);
+    backdrop-filter:blur(12px);
+    padding:14px 32px;
+    box-shadow:0 1px 0 rgba(224,160,57,.18);
+  }
+  .brand{display:flex;align-items:center;gap:11px;color:var(--cream)}
+  .brand .mark{
+    width:30px;height:30px;flex-shrink:0;
+  }
+  .brand .name{
+    font-family:var(--serif);font-weight:600;font-size:1.35rem;
+    letter-spacing:.01em;
+  }
+  .nav-links{display:flex;gap:34px;align-items:center}
+  .nav-links a{
+    color:var(--cream);font-size:.82rem;font-weight:500;
+    letter-spacing:.13em;text-transform:uppercase;opacity:.82;
+    transition:opacity .25s;
+  }
+  .nav-links a:hover{opacity:1}
+  .nav-cta{
+    border:1px solid rgba(244,239,226,.35)!important;
+    padding:9px 20px;border-radius:40px;opacity:1!important;
+    transition:background .25s,color .25s,border-color .25s;
+  }
+  .nav-cta:hover{background:var(--amber);border-color:var(--amber)!important;color:var(--green-deep)!important}
+  .nav-toggle{display:none}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:100vh;display:flex;align-items:center;
+    background:
+      radial-gradient(120% 80% at 50% 118%, rgba(224,160,57,.34) 0%, rgba(224,160,57,0) 55%),
+      linear-gradient(165deg,var(--green-deep) 0%,var(--green) 45%,var(--green-mid) 100%);
+    color:var(--cream);overflow:hidden;
+  }
+  .hero .contour{position:absolute;inset:0;opacity:.4;pointer-events:none}
+  .grain{
+    position:absolute;inset:0;pointer-events:none;opacity:.5;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+  }
+  .hero-inner{position:relative;z-index:2;padding:140px 0 90px;width:100%}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:10px;
+    font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+    font-weight:600;color:var(--amber-soft);margin-bottom:30px;
+  }
+  .eyebrow::before{content:"";width:34px;height:1px;background:var(--amber)}
+  h1.hero-title{
+    font-family:var(--serif);
+    font-weight:400;
+    font-size:clamp(2.7rem,6.4vw,5.4rem);
+    line-height:1.02;
+    letter-spacing:-.02em;
+    max-width:14ch;
+    margin-bottom:30px;
+  }
+  h1.hero-title em{font-style:italic;color:var(--amber-soft)}
+  .hero-sub{
+    font-size:clamp(1.05rem,1.6vw,1.32rem);
+    max-width:54ch;color:rgba(244,239,226,.82);
+    font-weight:400;margin-bottom:42px;
+  }
+  .hero-actions{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+  .btn-primary{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--amber);color:var(--green-deep);
+    font-weight:600;font-size:.98rem;
+    padding:16px 30px;border-radius:46px;
+    transition:transform .25s ease,box-shadow .25s ease,background .25s;
+    box-shadow:0 10px 30px -10px rgba(224,160,57,.6);
+  }
+  .btn-primary:hover{transform:translateY(-2px);background:var(--amber-soft);box-shadow:0 16px 40px -12px rgba(224,160,57,.7)}
+  .btn-primary svg{transition:transform .25s}
+  .btn-primary:hover svg{transform:translateX(4px)}
+  .btn-ghost{
+    font-size:.95rem;font-weight:500;color:var(--cream);
+    border-bottom:1px solid rgba(244,239,226,.4);padding-bottom:3px;
+    transition:border-color .25s,color .25s;
+  }
+  .btn-ghost:hover{border-color:var(--amber);color:var(--amber-soft)}
+  .hero-stats{
+    display:flex;gap:54px;margin-top:74px;flex-wrap:wrap;
+  }
+  .hero-stats .stat .num{
+    font-family:var(--serif);font-size:2.2rem;color:var(--cream);line-height:1;
+  }
+  .hero-stats .stat .lbl{
+    font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;
+    color:rgba(244,239,226,.6);margin-top:9px;
+  }
+
+  /* ---------- ANIM ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+  .reveal.in{opacity:1;transform:none}
+  .hero-inner .reveal{transition-delay:var(--d,0s)}
+
+  /* ---------- SECTION SHELL ---------- */
+  section{position:relative}
+  .sec-pad{padding:120px 0}
+  .sec-label{
+    font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+    font-weight:600;color:var(--moss);margin-bottom:22px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .sec-label::before{content:"";width:28px;height:1px;background:var(--moss)}
+
+  /* ---------- STATEMENT ---------- */
+  .statement{background:var(--cream-soft);border-top:1px solid rgba(19,38,26,.08);border-bottom:1px solid rgba(19,38,26,.08)}
+  .statement h2{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(2rem,4.6vw,3.8rem);line-height:1.08;
+    letter-spacing:-.02em;max-width:18ch;
+  }
+  .statement h2 em{font-style:italic;color:var(--moss)}
+  .statement .lead{
+    margin-top:34px;max-width:58ch;font-size:1.12rem;color:#2c4233;
+  }
+
+  /* ---------- CRITERIA ---------- */
+  .criteria{background:var(--green);color:var(--cream)}
+  .criteria .sec-label{color:var(--amber-soft)}
+  .criteria .sec-label::before{background:var(--amber)}
+  .criteria h2{
+    font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3.6vw,3rem);
+    line-height:1.1;letter-spacing:-.02em;max-width:16ch;margin-bottom:14px;
+  }
+  .criteria .intro{max-width:52ch;color:rgba(244,239,226,.75);margin-bottom:56px}
+  .crit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(244,239,226,.14);border:1px solid rgba(244,239,226,.14);border-radius:16px;overflow:hidden}
+  .crit-card{background:var(--green);padding:38px 32px;transition:background .35s}
+  .crit-card:hover{background:var(--green-mid)}
+  .crit-card .ic{
+    width:42px;height:42px;color:var(--amber-soft);margin-bottom:22px;
+  }
+  .crit-card h3{font-family:var(--serif);font-weight:500;font-size:1.4rem;margin-bottom:10px}
+  .crit-card p{font-size:.98rem;color:rgba(244,239,226,.74)}
+
+  /* ---------- PROCESS ---------- */
+  .process{background:var(--cream)}
+  .process h2{
+    font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3.6vw,3rem);
+    line-height:1.1;letter-spacing:-.02em;margin-bottom:14px;max-width:18ch;
+  }
+  .process h2 em{font-style:italic;color:var(--amber)}
+  .process .intro{max-width:52ch;color:#4a5b4f;margin-bottom:64px;font-size:1.08rem}
+  .steps{position:relative}
+  .steps::before{
+    content:"";position:absolute;left:0;top:8px;bottom:8px;width:2px;
+    background:linear-gradient(var(--moss),var(--amber));
+  }
+  @media(min-width:780px){
+    .steps::before{left:138px}
+  }
+  .step{
+    display:grid;grid-template-columns:1fr;gap:6px;
+    padding:0 0 46px 30px;position:relative;
+  }
+  .step:last-child{padding-bottom:0}
+  .step::before{
+    content:"";position:absolute;left:-7px;top:6px;width:16px;height:16px;
+    border-radius:50%;background:var(--cream);border:3px solid var(--moss);
+  }
+  .step:last-child::before{border-color:var(--amber);background:var(--amber)}
+  .step .day{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--moss);white-space:nowrap}
+  .step h3{font-family:var(--serif);font-weight:500;font-size:1.45rem;color:var(--ink)}
+  .step p{color:#4a5b4f;max-width:60ch}
+  @media(min-width:780px){
+    .step{grid-template-columns:138px 1fr;column-gap:48px;padding-left:0}
+    .step::before{left:131px}
+    .step .day{padding-top:7px;padding-right:30px;text-align:right;grid-row:span 3}
+    .step h3,.step p{grid-column:2}
+  }
+
+  /* ---------- PROMISE ---------- */
+  .promise{background:var(--green-deep);color:var(--cream);overflow:hidden;position:relative}
+  .promise .glow{position:absolute;width:600px;height:600px;border-radius:50%;
+    background:radial-gradient(circle,rgba(224,160,57,.22),transparent 65%);
+    top:-200px;right:-150px;pointer-events:none}
+  .promise h2{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,4.4vw,3.4rem);
+    line-height:1.12;letter-spacing:-.02em;max-width:20ch;margin-bottom:30px}
+  .promise h2 em{font-style:italic;color:var(--amber-soft)}
+  .promise-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;margin-top:54px}
+  .promise-item{padding-left:22px;border-left:2px solid var(--amber);max-width:46ch}
+  .promise-item h4{font-family:var(--serif);font-weight:500;font-size:1.25rem;margin-bottom:7px}
+  .promise-item p{color:rgba(244,239,226,.74);font-size:.99rem}
+
+  /* ---------- CONTACT ---------- */
+  .contact{background:var(--cream-soft);text-align:center}
+  .contact .sec-label{justify-content:center}
+  .contact .sec-label::before{display:none}
+  .contact h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.3rem,5vw,4rem);
+    line-height:1.05;letter-spacing:-.02em;margin:0 auto 24px;max-width:16ch}
+  .contact h2 em{font-style:italic;color:var(--amber)}
+  .contact p{max-width:50ch;margin:0 auto 40px;font-size:1.12rem;color:#3a4d40}
+  .contact .email{
+    display:inline-flex;align-items:center;gap:12px;
+    font-family:var(--serif);font-size:clamp(1.3rem,2.6vw,1.9rem);
+    color:var(--green);border-bottom:2px solid var(--amber);padding-bottom:6px;
+    transition:color .25s,transform .25s;
+  }
+  .contact .email:hover{color:var(--moss);transform:translateY(-2px)}
+  .contact .note{margin-top:34px;font-size:.92rem;color:#6a7a6e}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--green-deep);color:rgba(244,239,226,.6);padding:46px 0}
+  .foot-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+  .foot-brand{display:flex;align-items:center;gap:10px;color:var(--cream)}
+  .foot-brand .name{font-family:var(--serif);font-size:1.15rem;font-weight:600}
+  .foot-inner .meta{font-size:.85rem}
+  footer a:hover{color:var(--amber-soft)}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:880px){
+    .crit-grid{grid-template-columns:1fr 1fr}
+    .promise-grid{grid-template-columns:1fr}
+  }
+  @media(max-width:680px){
+    .wrap{padding:0 22px}
+    nav{padding:18px 22px}
+    .nav-links{display:none}
+    .hero{min-height:auto;align-items:flex-start}
+    .hero-inner{padding:118px 0 80px}
+    .crit-grid{grid-template-columns:1fr}
+    .hero-stats{gap:34px}
+    .sec-pad{padding:84px 0}
+    .foot-inner{flex-direction:column;align-items:flex-start}
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#top" class="brand" aria-label="Rise Lawns home">
+    <svg class="mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="16" cy="16" r="15" stroke="#e0a039" stroke-width="1.5"/>
+      <path d="M16 24c0-5 0-9 0-9M16 15c-3-1-5-3-5-6 3 0 5 2 5 6Zm0 0c3-1 5-3 5-6-3 0-5 2-5 6Z" stroke="#f4efe2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M9 24h14" stroke="#e0a039" stroke-width="1.6" stroke-linecap="round"/>
+    </svg>
+    <span class="name">Rise&nbsp;Lawns</span>
+  </a>
+  <div class="nav-links">
+    <a href="#approach">Approach</a>
+    <a href="#criteria">What We Buy</a>
+    <a href="#process">Process</a>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <svg class="contour" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g stroke="#3f7a4f" stroke-width="1" fill="none" opacity="0.55">
+      <path d="M-50 620 C 250 560 460 700 720 640 C 980 580 1180 700 1500 620"/>
+      <path d="M-50 680 C 250 620 460 760 720 700 C 980 640 1180 760 1500 680"/>
+      <path d="M-50 740 C 250 680 460 820 720 760 C 980 700 1180 820 1500 740"/>
+      <path d="M-50 800 C 250 740 460 880 720 820 C 980 760 1180 880 1500 800"/>
+      <path d="M-50 560 C 250 500 460 640 720 580 C 980 520 1180 640 1500 560"/>
+    </g>
+  </svg>
+  <div class="grain"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow reveal" style="--d:.05s">A Metro Atlanta Landscaping Holding Company</span>
+    <h1 class="hero-title reveal" style="--d:.15s">We buy landscaping businesses <em>built to last.</em></h1>
+    <p class="hero-sub reveal" style="--d:.28s">Rise Lawns acquires established residential and commercial landscaping companies across Metro Atlanta generating $500K–$3M in annual revenue. We're long-term owners — not flippers. We protect the team, the name, and the customers you spent years building.</p>
+    <div class="hero-actions reveal" style="--d:.4s">
+      <a href="#contact" class="btn-primary">Start a conversation
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#process" class="btn-ghost">See how it works</a>
+    </div>
+    <div class="hero-stats reveal" style="--d:.52s">
+      <div class="stat"><div class="num">$500K–$3M</div><div class="lbl">Target Revenue</div></div>
+      <div class="stat"><div class="num">&lt; 60 Days</div><div class="lbl">To Close</div></div>
+      <div class="stat"><div class="num">Forever</div><div class="lbl">Hold Period</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- STATEMENT -->
+<section class="statement sec-pad" id="approach">
+  <div class="wrap">
+    <div class="sec-label reveal">Our Approach</div>
+    <h2 class="reveal">We're not a fund. We're <em>owners</em> — buying one great company and running it for decades.</h2>
+    <p class="lead reveal">Most buyers want to flip your business, strip the overhead, and move on. We're the opposite. Rise Lawns is built to acquire a single landscaping company in Metro Atlanta and steward it for the long haul — keeping your crew employed, your standards intact, and your name on the trucks. If you've spent years building something real and you're thinking about what comes next, we'd like to talk.</p>
+  </div>
+</section>
+
+<!-- CRITERIA -->
+<section class="criteria sec-pad" id="criteria">
+  <div class="wrap">
+    <div class="sec-label reveal">What We Look For</div>
+    <h2 class="reveal">A simple fit. No surprises.</h2>
+    <p class="intro reveal">If most of these sound like your business, we'd love to hear from you — even if you're just exploring.</p>
+    <div class="crit-grid">
+      <div class="crit-card reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.6-7-11a7 7 0 0114 0c0 5.4-7 11-7 11Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.6"/></svg>
+        <h3>Metro Atlanta</h3>
+        <p>Headquartered in or serving the greater Atlanta area — from Marietta to Decatur, Alpharetta to Peachtree City.</p>
+      </div>
+      <div class="crit-card reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M7 8h7a3 3 0 010 6H7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3>$500K–$3M Revenue</h3>
+        <p>Established companies with steady annual revenue and a track record of profitability through the seasons.</p>
+      </div>
+      <div class="crit-card reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M4 7l8-4 8 4-8 4-8-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 12l8 4 8-4M4 17l8 4 8-4" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <h3>Recurring Work</h3>
+        <p>Maintenance contracts, commercial grounds care, or design-build with loyal, repeat customers.</p>
+      </div>
+      <div class="crit-card reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.6"/><path d="M5 20a7 7 0 0114 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <h3>An Owner Ready</h3>
+        <p>A founder looking to retire, slow down, or step out of the day-to-day with the business in good hands.</p>
+      </div>
+      <div class="crit-card reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M4 18c4-2 5-9 8-9s4 7 8 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="6" r="2" stroke="currentColor" stroke-width="1.6"/></svg>
+        <h3>A Proud Team</h3>
+        <p>A crew you trust and would want to see taken care of long after the deal closes.</p>
+      </div>
+      <div class="crit-card reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7Z" stroke="currentColor" stroke-width="1.6"/><path d="M9 9l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>A Good Reputation</h3>
+        <p>Strong reviews and word-of-mouth in your community — the kind of name people recommend.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process sec-pad" id="process">
+  <div class="wrap">
+    <div class="sec-label reveal">The Process</div>
+    <h2 class="reveal">We can buy your business in <em>under 60 days.</em></h2>
+    <p class="intro reveal">No banker, no bidding war, no months of uncertainty. We keep things simple and respect your time. Here's exactly how it goes.</p>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="day">Day 1</span>
+        <h3>Intro Call</h3>
+        <p>A relaxed 30-minute call to hear your story, what you've built, and what you're hoping for next. No pressure, no commitment.</p>
+      </div>
+      <div class="step reveal">
+        <span class="day">Day 2</span>
+        <h3>Mutual NDA</h3>
+        <p>We both sign a mutual non-disclosure agreement so every detail of your business — and ours — stays confidential.</p>
+      </div>
+      <div class="step reveal">
+        <span class="day">Day 3–5</span>
+        <h3>Simple Info Share</h3>
+        <p>We ask for a short, plain-English list — typically revenue detail and high-level financials. Send what you can, when you can. We don't sweat the small stuff.</p>
+      </div>
+      <div class="step reveal">
+        <span class="day">Day 7</span>
+        <h3>Letter of Intent</h3>
+        <p>We send a clear term sheet with a fair valuation and structure. If it feels right, we both sign a Letter of Intent to align before diligence begins.</p>
+      </div>
+      <div class="step reveal">
+        <span class="day">Day 7–55</span>
+        <h3>Due Diligence</h3>
+        <p>We confirm the handful of things that matter most — usually in the first few weeks. The rest is straightforward, and we move quickly to keep momentum.</p>
+      </div>
+      <div class="step reveal">
+        <span class="day">Day 60</span>
+        <h3>Sign &amp; Close</h3>
+        <p>We sign the purchase agreement and wire you the funds. You hand off a business you love to people who'll care for it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISE -->
+<section class="promise sec-pad">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div class="sec-label reveal" style="color:var(--amber-soft)">Why Sell to Rise Lawns</div>
+    <h2 class="reveal">Your business is more than a balance sheet. <em>We treat it that way.</em></h2>
+    <div class="promise-grid">
+      <div class="promise-item reveal">
+        <h4>Your team stays</h4>
+        <p>We're buying because of the people who make it work. Your crew keeps their jobs, their pay, and their place.</p>
+      </div>
+      <div class="promise-item reveal">
+        <h4>Your name lives on</h4>
+        <p>The brand you built keeps its name and reputation in the community. We're stewards, not strippers.</p>
+      </div>
+      <div class="promise-item reveal">
+        <h4>Your customers are cared for</h4>
+        <p>The relationships you spent years earning are honored — same quality, same trust, same handshake.</p>
+      </div>
+      <div class="promise-item reveal">
+        <h4>You set the pace</h4>
+        <p>Want a clean exit? Want to stay on for a season to transition? We build the deal around what you need.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact sec-pad" id="contact">
+  <div class="wrap">
+    <div class="sec-label reveal">Get in Touch</div>
+    <h2 class="reveal">Let's start with a <em>conversation.</em></h2>
+    <p class="reveal">Whether you're ready to sell or just curious what your business might be worth, we'd love to hear from you. Every conversation is confidential and there's never any obligation.</p>
+    <a href="mailto:hello@riselawns.com?subject=Exploring%20a%20conversation%20with%20Rise%20Lawns" class="email reveal">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      hello@riselawns.com
+    </a>
+    <p class="note reveal">Based in Metro Atlanta, Georgia.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div class="foot-brand">
+      <svg class="mark" width="26" height="26" viewBox="0 0 32 32" fill="none">
+        <circle cx="16" cy="16" r="15" stroke="#e0a039" stroke-width="1.5"/>
+        <path d="M16 24c0-5 0-9 0-9M16 15c-3-1-5-3-5-6 3 0 5 2 5 6Zm0 0c3-1 5-3 5-6-3 0-5 2-5 6Z" stroke="#f4efe2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9 24h14" stroke="#e0a039" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="name">Rise Lawns</span>
+    </div>
+    <div class="meta">© <span id="yr"></span> Rise Lawns · Acquiring landscaping businesses in Metro Atlanta · <a href="mailto:hello@riselawns.com">hello@riselawns.com</a></div>
+  </div>
+</footer>
+
+<script>
+  // Nav background on scroll
+  const nav=document.getElementById('nav');
+  const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>40);
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+  // Year
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  // Reveal on load (hero) + on scroll (sections)
+  window.addEventListener('load',()=>{
+    document.querySelectorAll('.hero-inner .reveal').forEach(el=>el.classList.add('in'));
+  });
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('section .reveal').forEach((el,i)=>{
+    el.style.transitionDelay=(i%6)*0.06+'s';
+    io.observe(el);
+  });
+</script>
+</body>
+</html>
