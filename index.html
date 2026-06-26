@@ -36,6 +36,9 @@
     -webkit-font-smoothing:antialiased;
     overflow-x:hidden;
   }
+  .brand .mark{
+    height:32px;width:auto;flex-shrink:0;
+  }
   ::selection{background:var(--amber);color:var(--green-deep)}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
@@ -281,11 +284,7 @@
 
 <nav id="nav">
   <a href="#top" class="brand" aria-label="Rise Lawns home">
-    <svg class="mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="16" cy="16" r="15" stroke="#e0a039" stroke-width="1.5"/>
-      <path d="M16 24c0-5 0-9 0-9M16 15c-3-1-5-3-5-6 3 0 5 2 5 6Zm0 0c3-1 5-3 5-6-3 0-5 2-5 6Z" stroke="#f4efe2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M9 24h14" stroke="#e0a039" stroke-width="1.6" stroke-linecap="round"/>
-    </svg>
+    <img class="mark" src="rise-lawns-logo.png" alt="Rise Lawns logo">
     <span class="name">Rise&nbsp;Lawns</span>
   </a>
   <div class="nav-links">
@@ -460,11 +459,9 @@
 <footer>
   <div class="wrap foot-inner">
     <div class="foot-brand">
-      <svg class="mark" width="26" height="26" viewBox="0 0 32 32" fill="none">
-        <circle cx="16" cy="16" r="15" stroke="#e0a039" stroke-width="1.5"/>
-        <path d="M16 24c0-5 0-9 0-9M16 15c-3-1-5-3-5-6 3 0 5 2 5 6Zm0 0c3-1 5-3 5-6-3 0-5 2-5 6Z" stroke="#f4efe2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M9 24h14" stroke="#e0a039" stroke-width="1.6" stroke-linecap="round"/>
-      </svg>
+      <img class="mark" src="rise-lawns-logo.png" alt="Rise Lawns logo" style="height:30px;width:auto">
+      <span class="name">Rise Lawns</span>
+    </div>
       <span class="name">Rise Lawns</span>
     </div>
     <div class="meta">© <span id="yr"></span> Rise Lawns · Acquiring landscaping businesses in Metro Atlanta · <a href="mailto:hello@riselawns.com">hello@riselawns.com</a></div>
